@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "time": {
+      "type": "object",
+      "properties": {
+        "updated": {
+          "type": "string"
+        },
+        "updatedISO": {
+          "type": "string"
+        },
+        "updateduk": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "updated",
+        "updatedISO",
+        "updateduk"
+      ]
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "chartName": {
+      "type": "string"
+    },
+    "bpi": {
+      "type": "object",
+      "properties": {
+        "USD": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "symbol": {
+              "type": "string"
+            },
+            "rate": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "rate_float": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "code",
+            "symbol",
+            "rate",
+            "description",
+            "rate_float"
+          ]
+        },
+        "GBP": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "symbol": {
+              "type": "string"
+            },
+            "rate": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "rate_float": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "code",
+            "symbol",
+            "rate",
+            "description",
+            "rate_float"
+          ]
+        },
+        "EUR": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "symbol": {
+              "type": "string"
+            },
+            "rate": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "rate_float": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "code",
+            "symbol",
+            "rate",
+            "description",
+            "rate_float"
+          ]
+        }
+      },
+      "required": [
+        "USD",
+        "GBP",
+        "EUR"
+      ]
+    }
+  },
+  "required": [
+    "time",
+    "disclaimer",
+    "chartName",
+    "bpi"
+  ]
+}
